@@ -40,25 +40,18 @@ const portfolioData = {
       url: "case-study-irctc.html"
     },
     {
+      title: "Google Pay",
+      subtitle: "Spend Lite budget-awareness companion",
+      description: "A post-payment budget-awareness feature proposal for Google Pay. Examines how reflecting relative transaction weight after a payment builds responsible financial habits for early-income users without introducing transactional friction.",
+      image: "asset5/gpay_logo.svg",
+      url: "case-study-gpay.html"
+    },
+    {
       title: "Google Maps",
       subtitle: "Ride Along group travel companion feature",
-      description: "A proposed feature letting travel groups see each other's live location and broadcast status (fuel stop, snack break, fallen behind) directly inside Maps navigationred ucing calls and lost-group friction on multi-vehicle trips.",
+      description: "A proposed feature letting travel groups see each other's live location and broadcast status (fuel stop, snack break, fallen behind) directly inside Maps navigation, reducing calls and lost-group friction on multi-vehicle trips.",
       image: "asset1/maps_logo.svg",
       url: "case-study-googlemaps.html"
-    },
-    {
-      title: "Digital Concession Card",
-      subtitle: "Simplifying digital concession verification for students",
-      description: "A mobile product design project aimed at replacing physical student transit cards with secure, offline QR codes to speed up verification checkpoints.",
-      image: "",
-      url: "case-study-concession.html"
-    },
-    {
-      title: "",
-      subtitle: "",
-      description: "",
-      image: "",
-      url: ""
     }
   ],
 

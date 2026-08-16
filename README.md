@@ -22,11 +22,12 @@ The project is structured to keep assets modular and maintain a clean, organized
 ├── case-study-googlemaps.html  # Google Maps "Ride Along" feature proposal
 ├── case-study-intellidash.html # IntelliDash NL-to-SQL dashboard case study
 ├── case-study-jarvis.html      # Jarvis Agentic Assistant case study
-├── case-study-concession.html  # Student Digital Concession card case study
+├── case-study-gpay.html        # Google Pay "Spend Lite" feature proposal
 ├── asset1/                     # Google Maps case study slide images & official logo
 ├── asset2/                     # IRCTC Tatkal case study slide images & official logo
 ├── asset3/                     # IntelliDash case study slide images
 ├── asset4/                     # Jarvis case study slide images
+├── asset5/                     # Google Pay case study slide images & official logo
 └── assets/                     # General images (profile photo, product screenshots)
 ```
 
@@ -63,6 +64,13 @@ The project is structured to keep assets modular and maintain a clean, organized
   * Designed a session-based navigation overlay inside the core map UI to broadcast live convoy locations without persistent friend lists.
   * Introduced one-tap status triggers (fuel stop, restroom break, fallen behind) to replace driving text calls.
   * Calculated real-time auto-regrouping ETAs.
+
+### 5. [Google Pay: Spend Lite Budget Companion](case-study-gpay.html)
+* **Scope**: Proposed Mobile Feature Layer.
+* **The Problem**: Seamless digital payment apps make spending invisible, leading to unexpected month-end budget blowouts.
+* **Key Interventions**:
+  * **Post-Payment Budget Reflection**: Rejected annoying pre-payment alerts that interfere with transaction speed, opting instead to reflect budget impact on existing transaction confirmation screens.
+  * **Relative Severity Thresholds**: Designed notifications that scale visual weight based on transaction impact as a percentage of the remaining monthly budget rather than using fixed rupee amounts.
 
 ---
 
