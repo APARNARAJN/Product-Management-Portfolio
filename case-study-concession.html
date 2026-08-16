@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Concession Case Study | Aparna Raj N</title>
+  <meta name="description" content="Mobile UX case study on simplifying student transit concessions verification by Aparna Raj N.">
+  <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+<body>
+
+  <!-- PROGRESS BAR -->
+  <div class="case-study-progress" id="scrollProgress"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="mainHeader" class="scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        Aparna Raj N<span class="logo-dot"></span>
+      </a>
+      
+      <button class="mobile-nav-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-menu-wrapper">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="case-studies.html" class="nav-link active">Case Studies</a></li>
+          <li><a href="resume.html" class="nav-resume-btn">Resume</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CASE STUDY HERO -->
+  <section class="case-study-hero">
+    <div class="container">
+      <span class="case-study-tag">Mobile Product · UX</span>
+      <h1>Simplifying digital concession verification for students.</h1>
+      
+      <div class="case-study-intro-grid">
+        <p class="case-study-summary">
+          A mobile product design project aimed at replacing physical student transit cards with secure, offline QR codes to speed up verification checkpoints.
+        </p>
+        
+        <div class="case-study-metadata">
+          <div>
+            <div class="meta-item-label">My Role</div>
+            <div class="meta-item-value">UX Researcher & Designer</div>
+          </div>
+          <div>
+            <div class="meta-item-label">Timeline</div>
+            <div class="meta-item-value">Academic Project</div>
+          </div>
+          <div>
+            <div class="meta-item-label">Methods</div>
+            <div class="meta-item-value">User Interviews & Wireframing</div>
+          </div>
+          <div>
+            <div class="meta-item-label">Focus</div>
+            <div class="meta-item-value">Mobile Interaction Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY CONTAINER -->
+  <div class="container">
+    <div class="case-study-container">
+      
+      <main class="case-study-body">
+        
+        <!-- SECTION 1: OVERVIEW -->
+        <section id="overview">
+          <h2><span class="section-num">01.</span> Overview</h2>
+          <p>
+            Metropolitan transit systems offer discounted tickets to students, but verifying eligibility is currently slow. Students must present physical ID cards to agents at ticketing windows, causing long queues during peak commute hours.
+          </p>
+          <p>
+            This mobile product study explores replacing physical cards with a digital concession card that generates secure verification codes, making checkpoints faster and reducing station queues.
+          </p>
+        </section>
+
+        <!-- SECTION 2: PROBLEM -->
+        <section id="problem">
+          <h2><span class="section-num">02.</span> The Core Problem</h2>
+          <p>
+            Physical student cards are easily forgotten, lost, or shared with unauthorized commuters. Furthermore, transit agents spend an average of 15 seconds manually inspecting each card, checking expiration dates and photos, creating massive entry bottle-necks at busy stations.
+          </p>
+        </section>
+
+        <!-- SECTION 3: USERS -->
+        <section id="users">
+          <h2><span class="section-num">03.</span> Target Users</h2>
+          <ul>
+            <li><strong>College Student Commuters:</strong> Travel daily, value speed, and expect verification to integrate seamlessly into their mobile routines.</li>
+            <li><strong>Transit Gate Agents:</strong> Stationed at counters or ticket gates, handling high passenger volumes under pressure, requiring instant, reliable confirmation results.</li>
+          </ul>
+        </section>
+
+        <!-- SECTION 4: MY ROLE -->
+        <section id="my-role">
+          <h2><span class="section-num">04.</span> My Role</h2>
+          <p>
+            As the **UX Researcher and Interaction Designer**, I interviewed 15 local university students to catalog verification friction points, created interactive user flow wireframes in Figma, and mapped database schemas to support the offline verification logic.
+          </p>
+        </section>
+
+        <!-- SECTION 5: UNDERSTANDING THE PROBLEM -->
+        <section id="understanding-problem">
+          <h2><span class="section-num">05.</span> Research & Connectivity Constraints</h2>
+          <p>
+            During student interviews, the primary friction point identified was **lack of mobile network connectivity**. Subway stations and transit tunnels have extremely poor cellular signals. 
+          </p>
+          <p>
+            This introduced a major product constraint: **A digital concession card that relies on cloud database checks to verify status will crash or hang inside underground stations, making it completely useless.**
+          </p>
+        </section>
+
+        <!-- SECTION 6: THE SOLUTION -->
+        <section id="solution">
+          <h2><span class="section-num">06.</span> The Solution</h2>
+          <p>
+            We designed a mobile application that generates a **secure, time-locked offline QR code**. 
+          </p>
+          <p>
+            The QR code contains encrypted, signed metadata (Student ID, Expiry Date, Photo URL reference). The transit agent's handheld scanner validates the signature using local cryptographic keys, completing verification in under 1 second without needing any internet connection.
+          </p>
+        </section>
+
+        <!-- SECTION 7: KEY DECISIONS -->
+        <section id="key-decisions">
+          <h2><span class="section-num">07.</span> Key Product decisions</h2>
+          
+          <div class="decision-card" style="background-color: var(--bg-primary); border: 1px solid var(--border-color); border-left: 4px solid var(--accent);">
+            <div class="decision-card-title" style="color: var(--accent);">Decision 1: Offline QR Codes vs. NFC / Cloud Authentication</div>
+            <p style="margin-bottom: 0.75rem; font-size: 0.95rem;">
+              <strong>Context:</strong> NFC offers the smoothest user experience, but it requires specific hardware integrations on transit gates and is inconsistently supported across low-cost Android smartphones used by students.
+            </p>
+            <p style="margin-bottom: 0; font-size: 0.95rem; color: var(--text-secondary);">
+              <strong>PM Rationale:</strong> We chose signed offline QR codes because they work instantly on any smartphone screen (regardless of model) and do not require active network signals, matching the accessibility constraints of all student segments.
+            </p>
+          </div>
+
+          <div class="decision-card" style="background-color: var(--bg-primary); border: 1px solid var(--border-color); border-left: 4px solid var(--accent);">
+            <div class="decision-card-title" style="color: var(--accent);">Decision 2: MVP Scope — De-prioritizing Ticketing Wallets</div>
+            <p style="margin-bottom: 0.75rem; font-size: 0.95rem;">
+              <strong>Context:</strong> Early project ideas suggested building a digital ticketing wallet inside the app so students could purchase and store transit passes directly.
+            </p>
+            <p style="margin-bottom: 0; font-size: 0.95rem; color: var(--text-secondary);">
+              <strong>PM Rationale:</strong> Integrating payment processors and transit APIs increases scope complexity by 4x. I de-scoped the wallet from the MVP to focus strictly on resolving the verification checkpoint bottleneck, which was the highest-friction pain point identified in our research.
+            </p>
+          </div>
+        </section>
+
+        <!-- SECTION 8: MVP -->
+        <section id="mvp">
+          <h2><span class="section-num">08.</span> MVP Scope</h2>
+          <p>
+            The final MVP boundaries:
+          </p>
+          <ul>
+            <li><strong>Included:</strong> Login via university SSO portal, time-locked QR code generation, local cryptographic signature generator.</li>
+            <li><strong>Excluded:</strong> Bank account link, automated ticket buying, pass renewal reminders.</li>
+          </ul>
+        </section>
+
+        <!-- SECTION 9: PRODUCT WORKFLOW -->
+        <section id="product">
+          <h2><span class="section-num">09.</span> User Flow Design</h2>
+          <p>
+            Below is the flow mapping showing how the verification runs offline at transit gates:
+          </p>
+
+          <div class="case-study-image" style="background: #FFFFFF; padding: 2rem;">
+            <svg width="100%" height="160" viewBox="0 0 700 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="30" y="55" width="130" height="50" rx="6" fill="#F9FAFB" stroke="#E4E4E7" stroke-width="1.5"/>
+              <text x="95" y="84" fill="#18181A" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">1. App Open (Offline)</text>
+
+              <line x1="160" y1="80" x2="210" y2="80" stroke="#233D32" stroke-width="2"/>
+              <polygon points="210,80 202,75 202,85" fill="#233D32"/>
+
+              <rect x="220" y="55" width="140" height="50" rx="6" fill="#F9FAFB" stroke="#E4E4E7" stroke-width="1.5"/>
+              <text x="290" y="84" fill="#18181A" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">2. Local Key Generate</text>
+
+              <line x1="360" y1="80" x2="410" y2="80" stroke="#233D32" stroke-width="2"/>
+              <polygon points="410,80 402,75 402,85" fill="#233D32"/>
+
+              <rect x="420" y="55" width="120" height="50" rx="6" fill="#F9FAFB" stroke="#E4E4E7" stroke-width="1.5"/>
+              <text x="480" y="84" fill="#18181A" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">3. Show QR Code</text>
+
+              <line x1="540" y1="80" x2="590" y2="80" stroke="#233D32" stroke-width="2"/>
+              <polygon points="590,80 582,75 582,85" fill="#233D32"/>
+
+              <rect x="600" y="55" width="80" height="50" rx="6" fill="#233D32" stroke="#233D32" stroke-width="1.5"/>
+              <text x="640" y="84" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">4. Scan Gate</text>
+            </svg>
+          </div>
+        </section>
+
+        <!-- SECTION 10: OUTCOME -->
+        <section id="outcome">
+          <h2><span class="section-num">10.</span> Proposed Success Metrics</h2>
+          <p>
+            Because this is an academic study, success is defined by simulated checkpoint performance metrics:
+          </p>
+
+          <div class="metrics-row">
+            <div class="metric-card">
+              <div class="metric-value">&lt; 1s</div>
+              <div class="metric-label">Verification Latency</div>
+              <div class="metric-desc">Elapsed scanner time to decode, validate signature, and confirm student discount eligibility.</div>
+            </div>
+            
+            <div class="metric-card">
+              <div class="metric-value">- 75%</div>
+              <div class="metric-label">Queue Time Reduction</div>
+              <div class="metric-desc">Target reduction in station ticketing window line times during morning peak hours.</div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-value">0</div>
+              <div class="metric-label">Network Dependency</div>
+              <div class="metric-desc">Zero reliance on mobile signal strength for transaction checkout.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 11: WHAT I LEARNED -->
+        <section id="what-i-learned">
+          <h2><span class="section-num">11.</span> What I Learned</h2>
+          <p>
+            This project taught me that **user environment overrides feature desires**. 
+          </p>
+          <p>
+            An online, cloud-connected ticketing database would be easier to build technically, but underground tunnel connectivity constraints forced an offline cryptographic QR code solution. Product management is about mapping these hidden physical constraints early to design systems that survive real-world usage.
+          </p>
+        </section>
+
+      </main>
+
+      <!-- Sticky Sidebar TOC -->
+      <aside class="case-study-sidebar">
+        <div class="sidebar-title">Concession Map</div>
+        <ul class="sidebar-toc">
+          <li><a href="#overview" class="toc-link active">01. Overview</a></li>
+          <li><a href="#problem" class="toc-link">02. Problem</a></li>
+          <li><a href="#users" class="toc-link">03. Target Users</a></li>
+          <li><a href="#my-role" class="toc-link">04. My Role</a></li>
+          <li><a href="#understanding-problem" class="toc-link">05. Research</a></li>
+          <li><a href="#solution" class="toc-link">06. Solutions</a></li>
+          <li><a href="#key-decisions" class="toc-link">07. Key Decisions</a></li>
+          <li><a href="#mvp" class="toc-link">08. MVP Scope</a></li>
+          <li><a href="#product" class="toc-link">09. User Flow Design</a></li>
+          <li><a href="#outcome" class="toc-link">10. Success Metrics</a></li>
+          <li><a href="#what-i-learned" class="toc-link">11. What I Learned</a></li>
+        </ul>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- CONTACT FOOTER -->
+  <section class="section-padding contact" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Read the next case study</h2>
+        <p>Explore IntelliDash, an AI Business Intelligence platform translating English queries into Postgres SQL charts.</p>
+        <a href="case-study-intellidash.html" class="btn btn-primary">Read IntelliDash Case Study</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <div class="footer-brand">Aparna Raj N</div>
+        <div class="footer-subtitle">Product Management · Technology · UX</div>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Aparna Raj N. Built with product focus.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js?v=1.1"></script>
+</body>
+</html>

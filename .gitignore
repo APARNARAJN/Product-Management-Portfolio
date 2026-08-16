@@ -1,0 +1,17 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Developer/System files
+*.log
+.gemini/
+.system_generated/
+scratch/
+CVS
+.svn
+.git/
+
+# Dependency folders
+node_modules/
+jspm_packages/
+web_modules/

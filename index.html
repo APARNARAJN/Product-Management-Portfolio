@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management Portfolio</title>
+  <meta name="description" content="Product Management / Product Builder Portfolio Website">
+  <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+<body>
+
+  <!-- Sticky/Minimal Navigation Bar -->
+  <header id="mainHeader">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="logoName">
+        <!-- Dynamically filled -->
+      </a>
+      
+      <button class="mobile-nav-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-menu-wrapper">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+          <li><a href="#toolkit" class="nav-link">Toolkit</a></li>
+          <li><a href="#whats-next" class="nav-link">What's Next</a></li>
+          <li><a href="#" class="nav-resume-btn" id="navResume" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / ABOUT Section -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <!-- Left Column -->
+        <div class="about-info">
+          <span class="eyebrow-text" id="heroEyebrow"></span>
+          <h1 class="hero-headline" id="heroHeadline"></h1>
+          <p class="about-p" id="heroAbout"></p>
+          <p class="subline-text" id="heroSubline"></p>
+          <div class="hero-actions" id="heroActions">
+            <a href="#" class="btn btn-primary" id="heroLinkedIn" target="_blank" rel="noopener">Connect on LinkedIn</a>
+            <a href="#" class="btn btn-secondary" id="heroResume" target="_blank" rel="noopener">View Resume</a>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="about-visual" id="aboutVisual">
+          <div class="photo-container" id="photoContainer">
+            <!-- Dynamically populated if photo is provided -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS I BUILT FOR MYSELF Section -->
+  <section class="section-padding products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Products</span>
+        <h2>Products I built for myself</h2>
+        <p class="section-subheading">Solving real problems I faced.</p>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Dynamic product cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES Section -->
+  <section class="section-padding case-studies-section" id="case-studies">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Analysis & Decisions</span>
+        <h2>Products, decisions, and what changed.</h2>
+      </div>
+      <div class="case-studies-grid" id="caseStudiesGrid">
+        <!-- Dynamic case study cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT TOOLKIT Section -->
+  <section class="section-padding toolkit-section" id="toolkit">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Toolkit</span>
+        <h2>My Product Toolkit</h2>
+        <p class="section-subheading">The stack behind my work.</p>
+      </div>
+      <div class="toolkit-grid" id="toolkitGrid">
+        <!-- Dynamic categories -->
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S NEXT Section -->
+  <section class="section-padding contact-section" id="whats-next">
+    <div class="container">
+      <div class="contact-box">
+        <span class="section-label" id="whatsNextEyebrow">Next Steps</span>
+        <h2 id="whatsNextHeading"></h2>
+        <p id="whatsNextDescription"></p>
+        
+        <div class="contact-buttons" id="contactButtons">
+          <a href="#" class="btn btn-primary" id="contactLinkedIn" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          <a href="#" class="btn btn-secondary" id="contactEmail">Email Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <div class="footer-brand" id="footerBrand"></div>
+        <div class="footer-subtitle" id="footerSubtitle">Product Management · Technology · UX</div>
+      </div>
+      <div class="footer-copy" id="footerCopy">
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link portfolio data configuration first, then app logic -->
+  <script src="portfolio-data.js?v=1.2"></script>
+  <script src="main.js?v=1.2"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps: Ride Along | Aparna Raj N</title>
+  <meta name="description" content="Product case study of Google Maps Ride Along group travel feature. By Aparna Raj N.">
+  <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+<body>
+
+  <!-- PROGRESS BAR -->
+  <div class="case-study-progress" id="scrollProgress"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="mainHeader" class="scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        Aparna Raj N<span class="logo-dot"></span>
+      </a>
+      
+      <button class="mobile-nav-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-menu-wrapper">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="index.html#case-studies" class="nav-link">Case Studies</a></li>
+          <li><a href="resume.html" class="nav-resume-btn">Resume</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CASE STUDY HERO -->
+  <section class="case-study-hero" style="background: radial-gradient(circle at 80% 20%, rgba(35, 55, 95, 0.03) 0%, transparent 50%);">
+    <div class="container">
+      <span class="case-study-tag" style="color: #1A365D; background-color: #EBF8FF;">Product Design · UX · Mobile</span>
+      <h1>Ride Along: Keeping travel groups connected on Google Maps.</h1>
+      
+      <div class="case-study-intro-grid">
+        <p class="case-study-summary">
+          A proposed session-based navigation layer designed to keep convoys and travel groups seamlessly connected. Driver locations, live regroup status, and smart regroup ETAs are consolidated into one unified dashboard directly inside the core navigation window.
+        </p>
+        
+        <div class="case-study-metadata">
+          <div>
+            <div class="meta-item-label">Prepared By</div>
+            <div class="meta-item-value">Aparna</div>
+          </div>
+          <div>
+            <div class="meta-item-label">Focus Area</div>
+            <div class="meta-item-value">Feature Proposal</div>
+          </div>
+          <div>
+            <div class="meta-item-label">Product</div>
+            <div class="meta-item-value">Google Maps Companion</div>
+          </div>
+          <div>
+            <div class="meta-item-label">Scope</div>
+            <div class="meta-item-value">Mobile Navigation Layer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY CONTAINER -->
+  <div class="container">
+    <div class="case-study-container">
+      
+      <main class="case-study-body">
+        
+        <!-- SECTION 1: OVERVIEW -->
+        <section id="overview">
+          <h2><span class="section-num">01.</span> Overview</h2>
+          <p>
+            Group trips rarely move as one unit. Convoys traveling across cars and bikes routinely split due to junctions, toll plazas, and varying speeds. <strong>Ride Along</strong> is a proposed session-based companion layer inside Google Maps navigation designed to keep groups connected and coordinate stops without unsafe phone calls.
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide1.png" alt="Ride Along: Keeping travel groups connected on Google Maps">
+          </div>
+        </section>
+
+        <!-- SECTION 2: PROBLEM -->
+        <section id="problem">
+          <h2><span class="section-num">02.</span> The Core Problem</h2>
+          <p>
+            During multi-vehicle journeys, drivers face constant anxiety about friends falling behind on unfamiliar highways or taking wrong exits. Rebounding signal dead zones and coordination friction often ruin the travel experience.
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide2.png" alt="The Problem: Groups traveling together keep losing each other">
+          </div>
+
+          <h3>Target Personas</h3>
+          <p>
+            The proposal addresses two core travel behaviors: trip organizers managing multiple vehicles, and family drivers managing caravan coordination.
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide3.png" alt="Who Feels This: Two people, one shared frustration">
+          </div>
+        </section>
+
+        <!-- SECTION 3: JOB TO BE DONE -->
+        <section id="job-to-be-done">
+          <h2><span class="section-num">03.</span> Job to be Done</h2>
+          <p>
+            Framing the feature's core utility around driver safety and shared navigation context:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide4.png" alt="Job to be Done Definition">
+          </div>
+        </section>
+
+        <!-- SECTION 4: LANDSCAPE TODAY -->
+        <section id="landscape">
+          <h2><span class="section-num">04.</span> Competitive Landscape</h2>
+          <p>
+            While location apps like WhatsApp or Life360 exist, they don't reside inside active turn-by-turn navigation or handle status-based regrouping:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide5.png" alt="Competitive Landscape Comparison">
+          </div>
+        </section>
+
+        <!-- SECTION 5: THE SOLUTION -->
+        <section id="solution">
+          <h2><span class="section-num">05.</span> Proposed Solution</h2>
+          <p>
+            Layering location sharing, status broadcasts, and smart regroup calculations directly onto the screen people already have open mid-navigation:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide7.png" alt="Ride Along: a live layer for group trips">
+          </div>
+        </section>
+
+        <!-- SECTION 6: CORE USER FLOW -->
+        <section id="user-flow">
+          <h2><span class="section-num">06.</span> Core User Flow</h2>
+          <p>
+            The user path maps a frictionless setup loop, requiring no app installs or friend lists, going directly from session start to auto-regrouping:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide8.png" alt="Core User Flow: From starting a session to regrouping">
+          </div>
+        </section>
+
+        <!-- SECTION 7: ENTRY POINTS & FEATURE DETAILS -->
+        <section id="features">
+          <h2><span class="section-num">07.</span> Entry Point & Status Controls</h2>
+          <p>
+            A quick-access top navigation bar pill enables immediate entry:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide9.png" alt="Ride Along Navigation UI Entry Point">
+          </div>
+          
+          <p>
+            A simple, one-tap grid replaces unsafe calls and texts while driving, broadcasting push updates and pins to the convoy:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide10.png" alt="Quick Tap Status Details">
+          </div>
+        </section>
+
+        <!-- SECTION 8: SCOPING V1 -->
+        <section id="scoping">
+          <h2><span class="section-num">08.</span> Scoping V1</h2>
+          <p>
+            Evaluating features using a MoSCoW prioritization matrix to deliver a high-value, lightweight MVP:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide11.png" alt="MoSCoW Scope Matrix for V1">
+          </div>
+        </section>
+
+        <!-- SECTION 9: RISKS & DECISIONS -->
+        <section id="risks">
+          <h2><span class="section-num">09.</span> Risks, Edge Cases, & Trade-offs</h2>
+          <p>
+            Addressing technical and privacy challenges, including adaptive location pings to protect battery life and offline indicators for signal dead zones:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide12.png" alt="Risks & Edge Cases Matrix">
+          </div>
+          
+          <p>
+            Decisions surrounding entry-point discoverability and trip-scoped consent vs. persistent always-on circles:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide13.png" alt="Product Trade-offs Considered">
+          </div>
+        </section>
+
+        <!-- SECTION 10: SUCCESS METRICS & ROLLOUT -->
+        <section id="metrics">
+          <h2><span class="section-num">10.</span> Success Metrics & Rollout</h2>
+          <p>
+            Defining core adoption, engagement, and safety indicators, led by a North Star metric focused on successful regrouping:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide6.png" alt="Defining Success Metrics">
+          </div>
+
+          <p>
+            Phased beta rollout scaling from single-digit groups to travel circles:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide14.png" alt="Rollout Plan Phases">
+          </div>
+
+          <p>
+            A final synthesis of why the feature matches existing habits and solves a recurring real-world pain:
+          </p>
+          <div class="case-study-image">
+            <img src="asset1/maps_slide15.png" alt="Summary: Why Ride Along is worth building">
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Sticky Sidebar TOC -->
+      <aside class="case-study-sidebar">
+        <div class="sidebar-title">Maps Map</div>
+        <ul class="sidebar-toc">
+          <li><a href="#overview" class="toc-link active">01. Overview</a></li>
+          <li><a href="#problem" class="toc-link">02. The Core Problem</a></li>
+          <li><a href="#job-to-be-done" class="toc-link">03. Job to be Done</a></li>
+          <li><a href="#landscape" class="toc-link">04. Landscape</a></li>
+          <li><a href="#solution" class="toc-link">05. The Solution</a></li>
+          <li><a href="#user-flow" class="toc-link">06. Core User Flow</a></li>
+          <li><a href="#features" class="toc-link">07. Entry & Controls</a></li>
+          <li><a href="#scoping" class="toc-link">08. Scoping V1</a></li>
+          <li><a href="#risks" class="toc-link">09. Risks & Decisions</a></li>
+          <li><a href="#metrics" class="toc-link">10. Metrics & Rollout</a></li>
+        </ul>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- CONTACT FOOTER -->
+  <section class="section-padding contact" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Read the next case study</h2>
+        <p>Explore how I redesigned India's highest-stakes 30-second Tatkal booking flow to rebuild user trust.</p>
+        <a href="case-study-irctc.html" class="btn btn-primary">Read IRCTC Case Study</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <div class="footer-brand">Aparna Raj N</div>
+        <div class="footer-subtitle">Product Management · Technology · UX</div>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Aparna Raj N. Built with product focus.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

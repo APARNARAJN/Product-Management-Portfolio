@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies | Aparna Raj N</title>
+  <meta name="description" content="Product Management case studies repository of Aparna Raj N. Outlining problems, user flows, and decisions.">
+  <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+<body>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="mainHeader" class="scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        Aparna Raj N<span class="logo-dot"></span>
+      </a>
+      
+      <button class="mobile-nav-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-menu-wrapper">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="case-studies.html" class="nav-link active">Case Studies</a></li>
+          <li><a href="resume.html" class="nav-resume-btn">Resume</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- INTRO SECTION -->
+  <section class="thinking-intro" style="padding-bottom: 2rem;">
+    <div class="container">
+      <span class="section-tag">Repository</span>
+      <h1 style="font-size: 3rem; letter-spacing: -0.02em; margin-bottom: 1.5rem;">Product Case Studies</h1>
+      <p class="text-lead" style="max-width: 750px; margin-bottom: 0;">
+        A detailed collection of product case studies documenting how I define problems, map user psychology, evaluate technical trade-offs, and prioritize MVP releases.
+      </p>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES INDEX LIST -->
+  <section style="padding: 3rem 0 8rem 0;">
+    <div class="container">
+      <div style="display: flex; flex-direction: column; gap: 3rem;">
+
+        <!-- CASE STUDY 1: IntelliDash -->
+        <article style="border: 1px solid var(--border-color); border-radius: 12px; padding: 3rem; background-color: var(--bg-primary); display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; align-items: start; transition: var(--transition-smooth);" onmouseover="this.style.borderColor='var(--border-hover)'" onmouseout="this.style.borderColor='var(--border-color)'">
+          <div>
+            <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+              <span class="project-category">AI Product</span>
+              <span class="project-category">Data</span>
+              <span class="project-category">B2B</span>
+            </div>
+            <h2 style="font-size: 1.75rem; line-height: 1.25; margin-bottom: 1rem;">IntelliDash: Natural Language to SQL BI Engine</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem;">
+              An AI-powered BI tool designed to help non-technical SMB owners query their sales data in plain English. Rebuilt schemas from NoSQL MongoDB to relational PostgreSQL mid-build to raise query accuracy, and isolated LLM inference inside FastAPI with local Llama models to preserve enterprise privacy.
+            </p>
+            <a href="case-study-intellidash.html" class="btn btn-primary">Read Case Study <span>→</span></a>
+          </div>
+          <div style="border-left: 1px solid var(--border-color); padding-left: 2.5rem; display: flex; flex-direction: column; gap: 1.5rem;">
+            <div>
+              <div class="meta-item-label">My Role</div>
+              <div class="meta-item-value">Solo PM & Engineer</div>
+            </div>
+            <div>
+              <div class="meta-item-label">Timeline</div>
+              <div class="meta-item-value">4 Weeks</div>
+            </div>
+            <div>
+              <div class="meta-item-label">Key Decisions</div>
+              <div class="meta-item-value" style="font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); line-height: 1.4; margin-top: 0.25rem;">
+                - Relational schema migration (35% accuracy gain)<br>
+                - Local model execution (zero cost, strict privacy)
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASE STUDY 2: Jarvis -->
+        <article style="border: 1px solid var(--border-color); border-radius: 12px; padding: 3rem; background-color: var(--bg-primary); display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; align-items: start; transition: var(--transition-smooth);" onmouseover="this.style.borderColor='var(--border-hover)'" onmouseout="this.style.borderColor='var(--border-color)'">
+          <div>
+            <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+              <span class="project-category">AI</span>
+              <span class="project-category">Productivity</span>
+            </div>
+            <h2 style="font-size: 1.75rem; line-height: 1.25; margin-bottom: 1rem;">Jarvis: Agentic AI Assistant Re-Routing</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem;">
+              A 75-day personal workflow assistant rebuild. Re-engineered the intent routing core, moving away from brittle keyword pattern-matching to an LLM-based tool-calling model schema to scale 10+ automation modules. Structured UI confirmation gates for high-risk write actions.
+            </p>
+            <a href="case-study-jarvis.html" class="btn btn-primary">Read Case Study <span>→</span></a>
+          </div>
+          <div style="border-left: 1px solid var(--border-color); padding-left: 2.5rem; display: flex; flex-direction: column; gap: 1.5rem;">
+            <div>
+              <div class="meta-item-label">My Role</div>
+              <div class="meta-item-value">Solo PM & Developer</div>
+            </div>
+            <div>
+              <div class="meta-item-label">Timeline</div>
+              <div class="meta-item-value">75 Days</div>
+            </div>
+            <div>
+              <div class="meta-item-label">Key Decisions</div>
+              <div class="meta-item-value" style="font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); line-height: 1.4; margin-top: 0.25rem;">
+                - Refactoring intent to tool schema routing<br>
+                - Safety UI gates for destructive actions (calendars, emails)
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASE STUDY 3: IRCTC Tatkal Redesign -->
+        <article style="border: 1px solid var(--border-color); border-radius: 12px; padding: 3rem; background-color: var(--bg-primary); display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; align-items: start; transition: var(--transition-smooth);" onmouseover="this.style.borderColor='var(--border-hover)'" onmouseout="this.style.borderColor='var(--border-color)'">
+          <div>
+            <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+              <span class="project-category">Product Design</span>
+              <span class="project-category">UX</span>
+              <span class="project-category">High-Stakes Transaction</span>
+            </div>
+            <h2 style="font-size: 1.75rem; line-height: 1.25; margin-bottom: 1rem;">IRCTC Tatkal Booking Experience Redesign</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem;">
+              A product design study focused on rebuilding user trust across India's highest-stakes 30-second train ticket booking window. Applied CIRCLES and user journey mappings to tackle app crashes, unreadable CAPTCHAs, and payment-ticket sync failures.
+            </p>
+            <a href="case-study-irctc.html" class="btn btn-primary">Read Case Study <span>→</span></a>
+          </div>
+          <div style="border-left: 1px solid var(--border-color); padding-left: 2.5rem; display: flex; flex-direction: column; gap: 1.5rem;">
+            <div>
+              <div class="meta-item-label">My Role</div>
+              <div class="meta-item-value">Product Designer & Researcher</div>
+            </div>
+            <div>
+              <div class="meta-item-label">Timeline</div>
+              <div class="meta-item-value">Academic Project</div>
+            </div>
+            <div>
+              <div class="meta-item-label">Key Decisions</div>
+              <div class="meta-item-value" style="font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); line-height: 1.4; margin-top: 0.25rem;">
+                - Prioritized simplified CAPTCHAs & server capacity ahead of FCFS queues<br>
+                - Designed instant payment-to-ticket confirmation status triggers
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASE STUDY 4: Student Concession Card -->
+        <article style="border: 1px solid var(--border-color); border-radius: 12px; padding: 3rem; background-color: var(--bg-primary); display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; align-items: start; transition: var(--transition-smooth);" onmouseover="this.style.borderColor='var(--border-hover)'" onmouseout="this.style.borderColor='var(--border-color)'">
+          <div>
+            <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+              <span class="project-category">Mobile Product</span>
+              <span class="project-category">UX</span>
+            </div>
+            <h2 style="font-size: 1.75rem; line-height: 1.25; margin-bottom: 1rem;">Digital Student Concession Verification</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem;">
+              A mobile product project focused on simplifying student discount verification for metropolitan transit networks. Mapped student pain points, designed Figma wireframes, and mapped API requirements to create a secure offline QR code verification solution.
+            </p>
+            <a href="case-study-concession.html" class="btn btn-primary">Read Case Study <span>→</span></a>
+          </div>
+          <div style="border-left: 1px solid var(--border-color); padding-left: 2.5rem; display: flex; flex-direction: column; gap: 1.5rem;">
+            <div>
+              <div class="meta-item-label">My Role</div>
+              <div class="meta-item-value">UX Researcher & Interaction Designer</div>
+            </div>
+            <div>
+              <div class="meta-item-label">Timeline</div>
+              <div class="meta-item-value">Academic Project</div>
+            </div>
+            <div>
+              <div class="meta-item-label">Key Decisions</div>
+              <div class="meta-item-value" style="font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); line-height: 1.4; margin-top: 0.25rem;">
+                - Offline QR code map for connectivity-poor subway tunnels<br>
+                - Stripped external banking wallet scopes out of the MVP
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <div class="footer-brand">Aparna Raj N</div>
+        <div class="footer-subtitle">Product Management · Technology · UX</div>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Aparna Raj N. Built with product focus.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js?v=1.1"></script>
+</body>
+</html>
