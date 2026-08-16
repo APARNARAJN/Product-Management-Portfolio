@@ -4,7 +4,7 @@ const portfolioData = {
     headline: " GOOD PRODUCTS SOLVE PROBLEMS, Great products make them feel simple.",
     about: "",
     subline: "My development taught me how products are built. My curiosity taught me to question if it's worth building.",
-    photo: "assets/pro.png",
+    photo: "assets/Pro.png",
     linkedin: "https://www.linkedin.com/in/aparna-raj-n-1198a7255/",
     resume: "https://drive.google.com/file/d/1USYSel0F9WuFfnsyAz9Ry4dUullPHY07/view?usp=sharing",
     email: "aparnarajn89@gmail.com"
