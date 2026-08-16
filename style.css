@@ -1032,6 +1032,37 @@ footer {
   box-shadow: 0 20px 40px rgba(0,0,0,0.02);
 }
 
+.case-study-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.archive-card {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 3rem;
+  background-color: var(--bg-primary);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  transition: var(--transition-smooth);
+  margin-bottom: 2.5rem;
+}
+
+.archive-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 12px 30px rgba(0,0, 0, 0.02);
+}
+
+.persona-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
 .case-study-image caption {
   display: block;
   padding: 1rem 1.5rem;
@@ -1278,8 +1309,12 @@ footer {
     gap: 3rem;
   }
 
-  .project-grid {
+  .products-grid {
     gap: 2rem;
+  }
+
+  .case-studies-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .case-study-container {
@@ -1358,20 +1393,20 @@ footer {
     max-width: 240px;
   }
 
-  .project-grid {
+  .products-grid {
     grid-template-columns: 1fr;
   }
   
-  .project-card {
+  .product-card {
     grid-column: span 1 !important;
   }
 
-  .project-card-content {
+  .product-card-content {
     flex-direction: column !important;
     align-items: flex-start !important;
   }
 
-  .project-card-content > div:last-child {
+  .product-card-content > div:last-child {
     align-items: flex-start !important;
     margin-top: 1.5rem;
   }
@@ -1435,5 +1470,27 @@ footer {
 
   .resume-contact-info {
     text-align: left;
+  }
+
+  .case-studies-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .archive-card {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 2rem !important;
+  }
+
+  .archive-card > div:last-child {
+    border-left: none !important;
+    border-top: 1px solid var(--border-color) !important;
+    padding-left: 0 !important;
+    padding-top: 1.5rem !important;
+  }
+
+  .persona-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
   }
 }
