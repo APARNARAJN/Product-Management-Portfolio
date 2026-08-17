@@ -95,7 +95,9 @@ const portfolioData = {
     tools: [
       "Git",
       "VS Code",
-      "Agile Development"
+      "Agile Development",
+      "calude",
+      "Antigravity"
     ],
     other: [
       "SDLC",
